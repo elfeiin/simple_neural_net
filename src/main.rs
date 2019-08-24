@@ -5,8 +5,8 @@
 
 fn main() {
 	// The set of inputs we want to mimic
-	let inputs: Vec<f64> = vec![0.0, 0.0, 10.0, 0.0, 1.0, 0.0, 1.0];
-	let target = 30.0;
+	let inputs: Vec<f64> = vec![0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0];
+	let target = 1.0;
 	let learning_rate = 0.1;
 	
 	// Create a neural net that learns from our inputs.
@@ -15,7 +15,7 @@ fn main() {
 	let mut net = Net::new(inputs, target, learning_rate);
 	
 	// Run 6 trials.
-	println!("{:?}", net.run(9).0);
+	println!("{:?}", net.run(99).0);
 }
 
 struct Net {
