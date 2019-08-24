@@ -15,7 +15,7 @@ fn main() {
 	let mut net = Net::new(inputs, target, learning_rate);
 	
 	// Run 6 trials.
-	println!("{:?}", net.run(99).0);
+	println!("Weights: {:?}", net.run(99).0);
 }
 
 struct Net {
