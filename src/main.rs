@@ -14,7 +14,7 @@ fn main() {
 	// The 3rd argument is the amount weights increase by every time learn() is called.
 	let mut net = Net::new(inputs, target, learning_rate);
 	
-	// Run 6 trials.
+	// Run n trials, print the return weights.
 	println!("Weights: {:?}", net.run(99).0);
 }
 
