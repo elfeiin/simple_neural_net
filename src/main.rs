@@ -65,7 +65,7 @@ impl Net {
 		while let Some(node) = self.next() {
 			result += node.input() * node.weight();
 		}
-		// result = 1.0 - (1.0 / result); // Sigmoid
+		// result = 1.0 / (1.0 + std::f64::consts::E.powf(-result)); // Sigmoid
 		result
 	}
 	
